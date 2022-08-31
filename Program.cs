@@ -28,7 +28,7 @@ namespace ConsoleApp1
             // Your code here to set result3
             Console.WriteLine($"Divide value3 by value1, display the result as a float: {result3}");
             */
-
+            /*
             string pangram = "The quick brown fox jumps over the lazy dog";
 
             string[] message = pangram.Split(' ');
@@ -43,6 +43,20 @@ namespace ConsoleApp1
 
             string result = string.Join(" ", newMessage);
             Console.WriteLine($"{result}");
+
+            */
+
+            string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+
+            string[] message = orderStream.Split(',');
+
+
+            foreach (var item in message)
+            {
+                if (item.StartsWith("B"))
+                    Console.WriteLine(item);
+            }
+
 
             Console.ReadLine();
         }
