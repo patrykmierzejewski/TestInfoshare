@@ -46,17 +46,30 @@ namespace ConsoleApp1
 
             */
 
-            string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+            /* string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
 
-            string[] message = orderStream.Split(',');
+             string[] message = orderStream.Split(',');
 
 
-            foreach (var item in message)
+             foreach (var item in message)
+             {
+                 if (item.StartsWith("B"))
+                     Console.WriteLine(item);
+             }
+
+             */
+
+            int a = 0, b = 1, c = 0;
+
+            Console.WriteLine($"{a}\n{b} ");
+
+            for(int i = 0; i < 20; i++) 
             {
-                if (item.StartsWith("B"))
-                    Console.WriteLine(item);
+                c = a + b;
+                Console.WriteLine($"{c}");
+                a = b;
+                b = c;
             }
-
 
             Console.ReadLine();
         }
