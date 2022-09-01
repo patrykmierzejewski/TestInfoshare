@@ -58,7 +58,7 @@ namespace ConsoleApp1
              }
 
              */
-
+            /*
             int a = 0, b = 1, c = 0;
 
             Console.WriteLine($"{a}\n{b} ");
@@ -69,6 +69,37 @@ namespace ConsoleApp1
                 Console.WriteLine($"{c}");
                 a = b;
                 b = c;
+            }
+            */
+
+            //Fizz, Buzz, fizz-buzz
+            /*
+             *Wypisz wszystkie liczby od 1 do 100, jednak jeżeli liczba jest podzielna przez:
+
+                trzy – wypisz „Fizz”,
+                pięć – wypisz „Buzz”,
+                trzy i pięć wypisz „FizzBuzz”.
+             */
+
+            string fizz = "Fizz";
+            string buzz = "Buzz";
+            string fizzBuzz = "FizzBuzz";
+
+            for (int i = 1; i < 100; i++) 
+            {
+                if (i % 3 == 0 || i % 5 == 0)
+                {
+                    if (i % 3 == 0)
+                        Console.WriteLine($"{i} {fizz}");
+                    if (i % 5 == 0)
+                        Console.WriteLine($"{i} {buzz}");
+                    if (i % 3 == 0 && i % 5 == 0)
+                        Console.WriteLine($"{i} {fizzBuzz}");
+                }
+                else 
+                {
+                    Console.WriteLine($"{i}");
+                }
             }
 
             Console.ReadLine();
